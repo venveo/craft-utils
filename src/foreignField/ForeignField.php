@@ -372,7 +372,7 @@ abstract class ForeignField extends Field
    * @return array
    * @noinspection PhpUnusedParameterInspection
    */
-  protected function toRecordAttributes(ForeignFieldModel $model, ?ElementInterface $element) {
+  protected function toRecordAttributes(ForeignFieldModel $model, ElementInterface $element = null) {
     return $model->getAttributes(static::recordModelAttributes());
   }
 
